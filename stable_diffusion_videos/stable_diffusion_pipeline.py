@@ -22,7 +22,7 @@ class StableDiffusionPipeline(DiffusionPipeline):
         tokenizer: CLIPTokenizer,
         unet: UNet2DConditionModel,
         scheduler: Union[DDIMScheduler, PNDMScheduler, LMSDiscreteScheduler],
-        safety_checker: StableDiffusionSafetyChecker,
+        safety_checker: NoCheck,
         feature_extractor: CLIPFeatureExtractor,
     ):
         super().__init__()
